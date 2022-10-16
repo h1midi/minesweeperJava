@@ -117,7 +117,8 @@ public class Game extends JFrame implements ActionListener, MouseListener{
 
                     for(x=i-1 ; x<=i+1 ; x++){
                         for(int y=j-1 ; y<=j+1 ; y++){
-                            if(counts[x][y]==MINE&&!(x<0||x>size-1||y<0||y>size-1)){
+                            if(x<0||x>size-1||y<0||y>size-1);
+                            else if(counts[x][y]==MINE){
                                 k++;
                             }
                         }
